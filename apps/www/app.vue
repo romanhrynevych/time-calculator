@@ -2,7 +2,7 @@
   <div class="flex min-h-dvh flex-col">
     <TheHeader />
     <main class="flex-grow">
-      <router-view />
+      <RouterView />
     </main>
     <TheFooter />
   </div>

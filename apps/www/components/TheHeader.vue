@@ -30,6 +30,12 @@ function handleColorModeChange(type: ColorMode) {
       <Logo class="text-primary max-h-8 max-w-fit sm:max-h-10" />
     </NuxtLink>
 
+    <div class="flex gap-4">
+      <NuxtLink to="/eta-calc" class="text-sm font-medium text-foreground ">
+        ETA Calc
+      </NuxtLink>
+    </div>
+
     <div class="flex items-center gap-4">
       <DropdownMenu>
         <DropdownMenuTrigger as-child>

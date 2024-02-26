@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { Input } from '~/components/ui/input'
 
-function secondsToHms(d) {
-  d = Number(d)
+function secondsToHms(d: number): string {
   const h = Math.floor(d / 3600)
   const m = Math.floor(d % 3600 / 60)
   const s = Math.floor(d % 3600 % 60)
@@ -88,8 +87,8 @@ function applyOperation(a: number, b: number, operator: string): number {
 
 <template>
   <div class="container grid gap-8">
-    <h1 class="text-5xl font-bold">
-      Home
+    <h1 class="text-4xl font-bold">
+      Time Calculator
     </h1>
 
     <div class="flex flex-col gap-4">
