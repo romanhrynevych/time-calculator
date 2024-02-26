@@ -15,7 +15,12 @@ function secondsToHms(d) {
 
 const expression = ref('')
 const result = computed(() => {
-  return expression.value ? secondsToHms(evaluate(expression.value) * 60) : '👋'
+  try {
+    return secondsToHms(evaluate(expression.value) * 60)
+  }
+  catch (e) {
+    return '👋'
+  }
 })
 
 function evaluate(expr: string): number {
