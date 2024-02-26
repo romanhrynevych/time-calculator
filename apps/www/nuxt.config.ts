@@ -1,12 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/color-mode',
-    '@nuxtjs/tailwindcss',
-    'shadcn-nuxt',
-    'magic-regexp/nuxt',
-  ],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
   shadcn: {
     /**
      * Prefix for all the imported component
